@@ -9,7 +9,8 @@ If you are looking for a plugin that checks /proc/mdstat you should take a look 
 ## Installing
 
 copy check_md_mismatch_cnt.sh to your Nagios/Icinga plugin directory (usually /usr/lib64/nagios/plugins/ )
-Edit your Nagios/Icinga config accordingly
+Edit your Nagios/Icinga config accordingly.
+For Icinga2 you can copy check_md_mismatch_cnt.conf to your CheckCommand-Definitions (usually /usr/share/icinga2/include/plugins-contrib.d/ ) 
 
 ## Usage
 
