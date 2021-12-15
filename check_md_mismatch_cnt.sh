@@ -5,7 +5,7 @@ CRITICAL=1
 MD_IS_OPTIONAL=0
 
 usage() {
-  echo -e "Usage: $0 [-w <warning>] [-c <critical>] [-o]\n -w <warning> \tWarning threshold for mismatch_cnt (OPTIONAL, default: 1)\n -c <critical> \tCritical threshold for mismatch_cnt (OPTIONAL, default: 1 (allways critical, no warning))\n -o \t\tIndicate that it is OK for there to be no software raid (without this flag UNKNOWN is returned if no software raid is found)\n -h\t\tDisplays this help message\n" 1>&2;
+  echo -e "Usage: $0 [-w <warning>] [-c <critical>] [-o]\n -w <warning> \tWarning threshold for mismatch_cnt (OPTIONAL, default: 1)\n -c <critical> \tCritical threshold for mismatch_cnt (OPTIONAL, default: 1 (always critical, no warning))\n -o \t\tIndicate that it is OK for there to be no software raid (without this flag UNKNOWN is returned if no software raid is found)\n -h\t\tDisplays this help message\n" 1>&2;
   exit 3;
 }
 
