@@ -1,0 +1,16 @@
+name: ShellCheck
+
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+
+jobs:
+  ShellCheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Run ShellCheck
+        uses: azohra/shell-linter@latest
+
