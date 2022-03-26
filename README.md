@@ -1,4 +1,5 @@
 # check_md_mismatch_cnt
+[![ShellCheck](https://github.com/antonfischl1980/check_md_mismatch_cnt/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/antonfischl1980/check_md_mismatch_cnt/actions/workflows/shellcheck.yml)
 
 ## Intro
 
