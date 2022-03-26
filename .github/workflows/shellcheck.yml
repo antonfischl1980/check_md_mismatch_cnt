@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
   push:
   pull_request:
+  schedule:
+      - cron: '11 12 * * 5' # Weekly
 
 jobs:
   ShellCheck:
