@@ -30,7 +30,7 @@ shift "$((OPTIND-1))"
 DATA=0
 MD_FOUND=0
 PERF_DATA=""
-while read file
+while read -r file
 do
   DATA2="$(cat "$file")"
   DATA="$((DATA + DATA2))"
@@ -49,10 +49,10 @@ if [ $MD_FOUND -eq 0 ]; then
   fi
 fi
 
-if [ $DATA -ge $CRITICAL ]; then
+if [ "$DATA" -ge "$CRITICAL" ]; then
   echo "CRITICAL - software raid mismatch_cnts are greater or equal than $CRITICAL |$PERF_DATA"
   exit 2;
-elif [ $DATA -ge $WARNING ] ; then
+elif [ "$DATA" -ge "$WARNING" ] ; then
   echo "WARNING - software raid mismatch_cnts are greater or equal than $WARNING |$PERF_DATA"
   exit 1;
 else 
