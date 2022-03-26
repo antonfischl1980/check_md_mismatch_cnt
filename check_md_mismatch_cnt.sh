@@ -27,8 +27,6 @@ echo "$CRITICAL"|grep -qE "^[0-9]+$" || usage
 # Resets position of first non-option argument
 shift "$((OPTIND-1))"
 
-EXITCODE="0"
-
 DATA=0
 MD_FOUND=0
 PERF_DATA=""
